@@ -22,7 +22,7 @@ y_h= abs(hilbert(Sig_N));                         %   the envelope of Sig_N
 F = ([1:N]-1)*Fs/N;                               %   frequency domain
 
 %%   plot original signal and its envelope spectrum
-figure(7);
+figure(6);
 subplot(3,2,1)
 plot(t,Sig_N,'black')
 axis([0 1 -2 2])
@@ -50,7 +50,7 @@ mu_SBL=Compound_fault_learning(Sig_N, Fs, Fb);
 y_our1=abs(fft(abs(hilbert(mu_SBL(:,1))) -mean(abs(hilbert(mu_SBL(:,1)   ))) ))/(N/2);
 y_our2=abs(fft(abs(hilbert(mu_SBL(:,2) )) -mean(abs(hilbert(mu_SBL(:,2) )))  ))/(N/2);
 
-figure(8);
+figure(7);
 F_area= F(1:2001);
 subplot(3,2,1)
 plot(t,mu_SBL(:,1),'black')
@@ -104,7 +104,7 @@ x_2 = x(:, 2);
 y_SMPGL1=abs(fft(abs(hilbert(x_1)) -mean(abs(hilbert(x_1)))  ))/(N/2);
 y_SMPGL2=abs(fft(abs(hilbert(x_2)) -mean(abs(hilbert(x_2)))  ))/(N/2);
 
-figure(9);
+figure(8);
 subplot(3,2,1)
 plot(t,x_1,'black')
 axis([0 1 -0.5 0.5])
@@ -113,7 +113,7 @@ title('a) SMPGL: Impluse Outer')
 
 subplot(3,2,2)
 plot(F_area, y_SMPGL1(1:2001) );
-axis([0 600 0 0.01])
+axis([0 600 0 0.015])
 title('b) SMPGL: Envelope Outer')
 
 subplot(3,2,3)
@@ -125,16 +125,6 @@ title('c) SMPGL: Impluse Inner')
 
 subplot(3,2,4)
 plot(F_area,  y_SMPGL2(1:2001))
-axis([0 1000 0 0.01])
+axis([0 1000 0 0.015])
 xlabel('Frequency [Hz]')
 title('d) SMPGL: Envelope Inner')
-
-
-
- 
- 
-
-
-
-
-
