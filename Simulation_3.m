@@ -4,7 +4,8 @@
 clear 
 close all
 addpath(genpath(fileparts(mfilename('fullpath'))));
-
+rand('seed',25)
+randn('seed',25)
 
 %% Creat the simulation signal
 Fs = 12800;                                 %% the sampling frequency
@@ -104,6 +105,3 @@ plot(t, x_3, 'black')
 axis([0 1 -1 1])
 xlabel('Time [s]')
 title('f) SMPGL (P2=1/57s)')
-
-
-
