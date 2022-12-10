@@ -1,4 +1,4 @@
-%% "Experiment_1.m" will generate Figs. 7-9 in the paper: 
+%% "Experiment_1.m" will generate Figs. 6-8 in the paper: 
 %% Zheng Cao, Jisheng Dai, Weichao Xu, and Chunqi Chang, "Sparse Bayesian Learning Approach for Compound Bearing Fault Diagnosis"
 
 clear;
