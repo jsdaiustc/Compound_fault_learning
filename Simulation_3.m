@@ -70,7 +70,7 @@ x_2 = x(:, 2);
 x_3 = x(:, 3);
 
 %% Plot the results
-figure(1);
+figure(5);
 subplot(3,2,1)
 plot(t,mu_SBL(:,1),'black')
 axis([0 1 -1 1])
