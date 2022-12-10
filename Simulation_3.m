@@ -1,4 +1,4 @@
-%% "Simulation_3.m" provides an example for Simulation 3 in the paper: 
+%% "Simulation_3.m" will generate Fig. 5 in the paper: 
 %% Zheng Cao, Jisheng Dai, Weichao Xu, and Chunqi Chang, "Sparse Bayesian Learning Approach for Compound Bearing Fault Diagnosis"
 
 clear 
