@@ -1,7 +1,7 @@
 # Compound_fault_learning
 MATLAB codes for the paper: Cao, Zheng, Jisheng Dai, Weichao Xu, and Chunqi Chang. "Sparse Bayesian learning approach for compound bearing fault diagnosis."
 
-"Simulation_2.m" will provide an example for Simulation 2 in the paper.
+"Simulation_2.m" will generate Fig. 5 in the paper.
  
 "Experiment_1.m" will generate Figs. 8-13 in the paper.
 
